@@ -4,8 +4,8 @@
   scroll-behavior:smooth;
 }
 :root {
-  --main-theme-color:rgb(92, 50, 168);
-  --another-theme-color:rgb(98, 57, 173);
+  --main-theme-color:rgb(35, 179, 204);
+  --another-theme-color:rgb(71, 185, 204);
 }
 *:focus {
   outline:none;
@@ -54,6 +54,7 @@ Body {
   display:inline-block;
   cursor:pointer;
   transition:0.3s;
+  color:white;
 }
 #header-text:hover {
   font-size:36px;
@@ -248,6 +249,12 @@ Body {
   justify-content:center;
   display:flex;
   margin:125px auto;
+}
+#footer {
+  background:var(--main-theme-color);
+  width:100%;
+  height:360px;
+  margin-top:100px;
 }
 @media only screen and (max-width: 900px) {
   #header-text {
