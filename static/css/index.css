@@ -24,11 +24,6 @@ a {
   text-decoration:none;
   color:white;
 }
-p {
-  font-family:Aviny;
-  font-size:30px;
-  color:white;
-}
 input::selection {
   background-color:transparent;
 }
@@ -37,38 +32,40 @@ Body {
   user-select:none;
   overflow-x:hidden;
 }
-#header {
+.header {
   background:var(--main-theme-color);
+  border-radius:10px;
   width:95%;
   height:60px;
-  border-radius:10px;
   justify-content:center;
   display:flex;
   margin:30px auto;
   cursor:context-menu;
 }
-#header-text {
+.header-text {
+  color:white;
+  font-family:Aviny;
+  font-size:30px;
   text-align:center;
   margin:3px 10px;
   display:inline-block;
   cursor:pointer;
   transition:0.3s;
-  color:white;
 }
-#header-text:hover {
+.header-text:hover {
   font-size:36px;
   margin-top:-10px;
 }
 #main-section {
+  background:var(--main-theme-color);
+  border-radius:10px;
   width:95%;
   height:490px;
-  background:var(--main-theme-color);
+  margin:30px auto;
   justify-content:center;
   display:flex;
-  border-radius:10px;
-  margin:30px auto;
 }
-#main-icon {
+.main-icon {
   width:430px;
   height:430px;
   margin:15px auto;
@@ -76,6 +73,7 @@ Body {
 #title-text {
   font-family:Aviny;
   font-size:44px;
+  color:white;
   text-align:center;
   margin-top:200px;
 }
@@ -84,7 +82,7 @@ Body {
   display:flex;
   margin:-20px auto;
 }
-#about-section {
+.about-section {
   background:var(--main-theme-color);
   width:280px;
   height:420px;
@@ -93,7 +91,7 @@ Body {
   transition:0.3s;
   cursor:default;
 }
-#about-section:hover {
+.about-section:hover {
   transform:scale(1.05);
 }
 .about-icon {
@@ -112,10 +110,10 @@ Body {
 }
 .about-description {
   font-family:Vazir;
-  width:230px;
-  height:170px;
   font-size:14px;
   color:white;
+  width:230px;
+  height:170px;
   text-align:center;
   margin:20px auto;
 }
@@ -124,15 +122,15 @@ Body {
   display:flex;
   margin:-20px auto;
 }
-#poster-section {
+.poster-section {
   background:var(--main-theme-color);
+  border-radius:20px;
   width:400px;
   height:380px;
-  border-radius:20px;
   margin:100px auto;
   transition:0.4s;
 }
-#poster-section:hover {
+.poster-section:hover {
   transform:scale(1.05);
 }
 .poster-title {
@@ -140,14 +138,14 @@ Body {
   font-size:40px;
   color:white;
   text-align:center;
-  margin:20px; auto;
+  margin:20px auto;
 }
 .poster-image {
   width:340px;
   height:240px;
   border-radius:20px;
-  display:flex;
   justify-content:center;
+  display:flex;
   margin:-20px auto;
 }
 .poster-description {
@@ -164,7 +162,7 @@ Body {
   display:flex;
   margin:-20px auto;
 }
-#video-section {
+.video-section {
   background:var(--main-theme-color);
   width:620px;
   height:340px;
@@ -172,7 +170,7 @@ Body {
   margin:100px auto;
   transition:0.4s;
 }
-#inner-video-section {
+.inner-video-section {
   background:var(--another-theme-color);
   width:540px;
   height:260px;
@@ -180,18 +178,18 @@ Body {
   margin:-110px auto;
   transition:0.4s;
 }
-#video-section:hover {
+.video-section:hover {
   transform:scale(1.05);
 }
-#video-title {
+.video-title {
   font-family:Aviny;
   font-size:40px;
-  margin:150px auto;
   color:white;
+  margin:150px auto;
   padding-top:65px;
   text-align:center;
 }
-#video-description {
+.video-description {
   font-family:Vazir;
   font-size:16px;
   color:white;
@@ -205,15 +203,15 @@ Body {
   display:flex;
   margin:-20px auto;
 }
-#podcast-section {
+.podcast-section {
   background:var(--main-theme-color);
+  border-radius:20px;
   width:400px;
   height:380px;
-  border-radius:20px;
   margin:100px auto;
   transition:0.4s;
 }
-#podcast-section:hover {
+.podcast-section:hover {
   transform:scale(1.05);
 }
 .podcast-title {
@@ -221,7 +219,7 @@ Body {
   font-size:44px;
   color:white;
   text-align:center;
-  margin:10px; auto;
+  margin:10px auto;
 }
 .podcast-image {
   width:340px;
@@ -245,7 +243,7 @@ Body {
   display:flex;
   margin:-20px auto;
 }
-#contact-section {
+.contact-section {
   background:var(--main-theme-color);
   width:280px;
   height:420px;
@@ -253,15 +251,15 @@ Body {
   margin:100px auto;
   transition:0.3s;
 }
-#contact-section:hover {
+.contact-section:hover {
   transform:scale(1.05);
 }
 .contact-icon {
   width:140px;
   height:140px;
-  margin:30px auto;
   justify-content:center;
   display:flex;
+  margin:30px auto;
 }
 .contact-title {
   font-family:Aviny;
@@ -272,90 +270,55 @@ Body {
 }
 .contact-description {
   font-family:Vazir;
-  width:230px;
-  height:170px;
   font-size:16px;
   color:white;
+  width:230px;
+  height:170px
   text-align:center;
   margin:20px auto;
 }
-#footer {
+.footer {
   background:var(--main-theme-color);
   width:100%;
   height:360px;
   margin-top:100px;
 }
+@font-face {
+    font-family:Aviny;
+    src: url('../font/Aviny.ttf');
+}
+@font-face {
+    font-family:Vazir;
+    src: url('../font/Vazir.ttf');
+}
 @media only screen and (max-width: 900px) {
-  #mian-icon {
-    margin-top:230px;
-    width:20px;
-    height:20px;
+  #main-section {
+    height:300px;
   }
-  #header-text {
+  .main-icon {
+    width:250px;
+    height:250px;
+  }
+  .header-text {
     font-size:22px;
     margin:10px 7px;
   }
   #about-template {
     flex-direction:column;
-    margin-top:50px;
+    margin-top:100px;
   }
-  #about-section {
+  .about-section {
     margin-top:-70px;
     width:300px;
   }
   #poster-template {
     flex-direction:column;
-    margin-top:50px;
+    margin-top:100px;
   }
-  #poster-section {
+  .poster-section {
     margin-top:-70px;
     width:300px;
     height:300px;
-  }
-  #video-template {
-    flex-direction:column;
-    margin-top:50px;
-  }
-  #video-section {
-    margin-top:-70px;
-    width:300px;
-    height:220px;
-  }
-  #podcast-template {
-    flex-direction:column;
-    margin-top:50px;
-  }
-  #podcast-section {
-    margin-top:-70px;
-    width:300px;
-    height:300px;
-  }
-  #contact-template {
-    flex-direction:column;
-    margin-top:50px;
-  }
-  #contact-section {
-    margin-top:-70px;
-    width:300px;
-  }
-  #inner-video-section {
-    width:240px;
-    height:160px;
-    margin-top:30px;
-    margin-left:30px;
-    position:absolute;
-  }
-  #video-title {
-    font-size:28px;
-    position:absolute;
-    margin-top:-30px;
-    margin-left:22px;
-  }
-  #video-description {
-    font-size:10px;
-    background:none;
-    width:180px;
-    margin-top:80px;
   }
   .poster-title {
     font-size:36px;
@@ -369,17 +332,42 @@ Body {
     background:none;
     width:225px;
   }
-  #about-template {
-    margin-top:100px;
-  }
-  #poster-template {
-    margin-top:100px;
-  }
   #video-template {
+    flex-direction:column;
     margin-top:100px;
+  }
+  .video-section {
+    margin-top:-70px;
+    width:300px;
+    height:220px;
+  }
+  .inner-video-section {
+    width:240px;
+    height:160px;
+    margin-top:30px;
+    margin-left:30px;
+    position:absolute;
+  }
+  .video-title {
+    font-size:28px;
+    position:absolute;
+    margin-top:-30px;
+    margin-left:22px;
+  }
+  .video-description {
+    font-size:10px;
+    background:none;
+    width:180px;
+    margin-top:80px;
   }
   #podcast-template {
+    flex-direction:column;
     margin-top:100px;
+  }
+  .podcast-section {
+    margin-top:-70px;
+    width:300px;
+    height:300px;
   }
   .podcast-title {
     font-size:36px;
@@ -394,21 +382,11 @@ Body {
     width:225px;
   }
   #contact-template {
+    flex-direction:column;
     margin-top:100px;
   }
-  #main-section {
-    height:300px;
+  .contact-section {
+    margin-top:-70px;
+    width:300px;
   }
-  #main-icon {
-    width:250px;
-    height:250px;
-  }
-}
-@font-face {
-    font-family:Aviny;
-    src: url('../font/Aviny.ttf');
-}
-@font-face {
-    font-family:Vazir;
-    src: url('../font/Vazir.ttf');
 }
