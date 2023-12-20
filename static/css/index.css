@@ -11,10 +11,9 @@
   outline:none;
 }
 ::-webkit-scrollbar {
-  width:0px;
+  display:none;
 }
 ::-webkit-scrollbar-track {
-  border-radius:10px;
   background-color:none;
 }
 ::placeholder {
@@ -31,7 +30,7 @@ p {
   color:white;
 }
 input::selection {
-  background-color: transparent;
+  background-color:transparent;
 }
 Body {
   background-color:black;
@@ -59,6 +58,26 @@ Body {
 #header-text:hover {
   font-size:36px;
   margin-top:-10px;
+}
+#main-section {
+  width:95%;
+  height:490px;
+  background:var(--main-theme-color);
+  justify-content:center;
+  display:flex;
+  border-radius:10px;
+  margin:30px auto;
+}
+#main-icon {
+  width:430px;
+  height:430px;
+  margin:15px auto;
+}
+#title-text {
+  font-family:Aviny;
+  font-size:44px;
+  text-align:center;
+  margin-top:200px;
 }
 #about-template {
   justify-content:center;
@@ -260,143 +279,136 @@ Body {
   text-align:center;
   margin:20px auto;
 }
-#title-text {
-  font-family:Aviny;
-  font-size:44px;
-  text-align:center;
-  margin-top:200px;
-}
-#main-section {
-  width:95%;
-  height:490px;
-  background:var(--main-theme-color);
-  justify-content:center;
-  display:flex;
-  border-radius:10px;
-  margin:30px auto;
-}
-#cat_picture {
-  justify-content:center;
-  display:flex;
-  margin:140px auto;
-  width:352px;
-  height:229px;
-}
-#info_text {
-  justify-content:center;
-  display:flex;
-  margin:125px auto;
-}
 #footer {
   background:var(--main-theme-color);
   width:100%;
   height:360px;
   margin-top:100px;
 }
-#main-icon {
-  width:430px;
-  height:430px;
-  margin:15px auto;
-}
 @media only screen and (max-width: 900px) {
+  #mian-icon {
+    margin-top:230px;
+    width:20px;
+    height:20px;
+  }
   #header-text {
     font-size:22px;
     margin:10px 7px;
   }
-  #skill-section {
+  #about-template {
     flex-direction:column;
     margin-top:50px;
   }
-  #skill-template {
+  #about-section {
     margin-top:-70px;
     width:300px;
   }
-  #project-section {
+  #poster-template {
     flex-direction:column;
     margin-top:50px;
   }
-  #project-template {
+  #poster-section {
     margin-top:-70px;
     width:300px;
     height:300px;
   }
-  #resume-section {
+  #video-template {
     flex-direction:column;
     margin-top:50px;
   }
-  #resume-template {
+  #video-section {
     margin-top:-70px;
     width:300px;
     height:220px;
   }
-  #contact-section {
+  #podcast-template {
     flex-direction:column;
     margin-top:50px;
   }
+  #podcast-section {
+    margin-top:-70px;
+    width:300px;
+    height:300px;
+  }
   #contact-template {
+    flex-direction:column;
+    margin-top:50px;
+  }
+  #contact-section {
     margin-top:-70px;
     width:300px;
   }
-  #inner-resume-template {
+  #inner-video-section {
     width:240px;
     height:160px;
     margin-top:30px;
     margin-left:30px;
     position:absolute;
   }
-  #resume-title {
+  #video-title {
     font-size:28px;
     position:absolute;
     margin-top:-30px;
     margin-left:22px;
   }
-  #resume-desc {
+  #video-description {
     font-size:10px;
     background:none;
     width:180px;
     margin-top:80px;
   }
-  .projects_title {
+  .poster-title {
     font-size:36px;
   }
-  .projects_image {
+  .poster-image {
     width:240px;
     height:160px;
   }
-  .projects_desc {
+  .poster-description {
     font-size:12px;
     background:none;
     width:225px;
   }
-  #skill-section {
+  #about-template {
     margin-top:100px;
   }
-  #project-section {
+  #poster-template {
     margin-top:100px;
   }
-  #resume-section {
+  #video-template {
     margin-top:100px;
   }
-  #contact-section {
+  #podcast-template {
+    margin-top:100px;
+  }
+  .podcast-title {
+    font-size:36px;
+  }
+  .podcast-image {
+    width:240px;
+    height:160px;
+  }
+  .podcast-description {
+    font-size:12px;
+    background:none;
+    width:225px;
+  }
+  #contact-template {
     margin-top:100px;
   }
   #main-section {
     height:300px;
   }
-  #info_text {
-    display:none;
-  }
-  #cat_picture {
-    margin-top:230px;
-    width:252px;
-    height:159px;
+  #main-icon {
+    width:250px;
+    height:250px;
   }
 }
 @font-face {
-    font-family: Aviny;
+    font-family:Aviny;
     src: url('../font/Aviny.ttf');
 }
 @font-face {
-    font-family: Vazir;
+    font-family:Vazir;
     src: url('../font/Vazir.ttf');
 }

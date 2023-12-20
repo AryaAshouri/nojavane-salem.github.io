@@ -16,23 +16,23 @@ function go_poster(){
 }
 function go_podcast(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 4160;
-  }
-  else {
-    document.body.scrollTop = 2490;
-  }
-}
-function go_video(){
-  if (window.innerWidth <= 900){
     document.body.scrollTop = 5030;
   }
   else {
     document.body.scrollTop = 3295;
   }
 }
+function go_video(){
+  if (window.innerWidth <= 900){
+    document.body.scrollTop = 4160;
+  }
+  else {
+    document.body.scrollTop = 2490;
+  }
+}
 function go_contact(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 5030;
+    document.body.scrollTop = 6400;
   }
   else {
     document.body.scrollTop = 4140;
