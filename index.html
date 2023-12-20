@@ -1,11 +1,10 @@
 <html>
   <head>
-    <link rel="stylesheet" href="static/css/index.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="static/img/icon/icon.png">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="icon" href="static/img/icon/icon.png">
     <title>
       نوجوان سالم
     </title>
@@ -16,7 +15,7 @@
         <p onclick="reload_page()" title="Home" id="header-text">خانه</p>
         <p onclick="go_about()" title="About" id="header-text">درباره</p>
         <p onclick="go_poster()" title="Poster" id="header-text">دیدنی</p>
-        <p onclick="go_podcast()" title="Blog" id="header-text">شنیدنی</p>
+        <p onclick="go_podcast()" title="Podcast" id="header-text">شنیدنی</p>
         <p onclick="go_video()" title="Video" id="header-text">تماشایی</p>
         <p onclick="go_contact()" title="Contact" id="header-text">ارتباط</p>
       </span>
@@ -26,7 +25,7 @@
       <img data-aos="fade-down" data-aos-duration="750" id="main-icon" src="static/img/icon/icon.png">
     </div>
 
-    <p data-aos="fade-up" data-aos-duration="750" id="main-text">ویژگی های نوجوان سالم</p>
+    <p data-aos="fade-up" data-aos-duration="750" id="title-text">ویژگی های نوجوان سالم</p>
     <span data-aos="fade-up" data-aos-duration="750" id="about-template">
       <div id="about-section">
           <img class="about-icon" src="static/img/icon/faith.png">
@@ -50,81 +49,81 @@
       </div>
     </span>
 
-    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="main-text">دیدنی های محبوب</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="project-section">
-      <div id="project-template">
-        <p class="projects_title"></p>
-        <a href="#"><img class="projects_image" src="static/img/poster/blog.png"></a>
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">دیدنی های محبوب</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="poster-template">
+      <div id="poster-section">
+        <p class="poster-title">فرار موش های کثیف</p>
+        <img class="poster-image" src="static/img/poster/7.png">
         <p class="projects_desc"></p>
       </div>
-      <div id="project-template">
-        <p class="projects_title"></p>
-        <a href="#"><img class="projects_image" src="static/img/poster/blog.png"></a>
-        <p class="projects_desc"></p>
+      <div id="poster-section">
+        <p class="poster-title">کبک های سر به زیر</p>
+        <img class="poster-image" src="static/img/poster/6.jpg">
+        <p class="poster-description"></p>
       </div>
-      <div id="project-template">
-        <p class="projects_title"></p>
-        <a href="#"><img class="projects_image" src="static/img/poster/blog.png"></a>
-        <p class="projects_desc"></p>
+      <div id="poster-section">
+        <p class="poster-title">شورای جهانی صلح</p>
+        <img class="poster-image" src="static/img/poster/5.jpg">
+        <p class="poster-description"></p>
       </div>
     </span>
 
-    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="main-text">تماشایی های محبوب</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="resume-section">
-      <div id="resume-template">
-        <a href="#"><div id="inner-resume-template">
-          <p id="resume-title"></p>
-          <p id="resume-desc"></p>
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">تماشایی های محبوب</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="video-template">
+      <div id="video-section">
+        <a href="#"><div id="inner-video-section">
+          <p id="video-title"></p>
+          <p id="video-description"></p>
         </div></a>
       </div>
-      <div id="resume-template">
-        <a href="#"><div id="inner-resume-template">
-          <p id="resume-title"></p>
-          <p id="resume-desc"></p>
+      <div id="video-section">
+        <a href="#"><div id="inner-video-section">
+          <p id="video-title"></p>
+          <p id="video-description"></p>
         </div></a>
       </div>
     </span>
 
-    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="main-text">شنیدنی های محبوب</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="project-section">
-      <div id="project-template">
-        <p class="projects_title"></p>
-        <a href="#"><img class="projects_image" src="static/img/poster/blog.png"></a>
-        <p class="projects_desc"></p>
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">شنیدنی های محبوب</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="podcast-template">
+      <div id="podcast-section">
+        <p class="podcast-title"></p>
+        <a href="#"><img class="podcast-image" src="static/img/poster/blog.png"></a>
+        <p class="podcast-description"></p>
       </div>
-      <div id="project-template">
-        <p class="projects_title"></p>
-        <a href="#"><img class="projects_image" src="static/img/poster/blog.png"></a>
-        <p class="projects_desc"></p>
+      <div id="podcast-section">
+        <p class="podcast-title"></p>
+        <a href="#"><img class="podcast-image" src="static/img/poster/blog.png"></a>
+        <p class="podcast-description"></p>
       </div>
-      <div id="project-template">
-        <p class="projects_title"></p>
-        <a href="#"><img class="projects_image" src="static/img/poster/blog.png"></a>
-        <p class="projects_desc"></p>
+      <div id="podcast-section">
+        <p class="podcast-title"></p>
+        <a href="#"><img class="podcast-image" src="static/img/poster/blog.png"></a>
+        <p class="podcast-description"></p>
       </div>
     </span>
 
-    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="main-text">راه های ارتباطی</p>
-    <span data-aos="fade-up" data-aos-duration="750" id="contact-section">
-      <div id="contact-template">
-        <a href="#"><img class="contact_icon" src="static/img/icon/compass.png">
-        <p class="contact_title">کانال پیام رسان ایتا</p>
-        <p class="contact_desc"></p></a>
+    <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">راه های ارتباطی</p>
+    <span data-aos="fade-up" data-aos-duration="750" id="contact-template">
+      <div id="contact-section">
+        <a href="#"><img class="contact-icon" src="static/img/icon/compass.png">
+        <p class="contact-title">کانال پیام رسان ایتا</p>
+        <p class="contact-description"></p></a>
       </div>
-      <div id="contact-template">
-        <a href="#"><img class="contact_icon" src="static/img/icon/compass.png">
-        <p class="contact_title">کانال پیام رسان بله</p>
-        <p class="contact_desc"></p></a>
+      <div id="contact-section">
+        <a href="#"><img class="contact-icon" src="static/img/icon/compass.png">
+        <p class="contact-title">کانال پیام رسان بله</p>
+        <p class="contact-description"></p></a>
       </div>
-      <div id="contact-template">
-        <a href="#"><img class="contact_icon" src="static/img/icon/compass.png">
-        <p class="contact_title">کانال پیام رسان سروش</p>
-        <p class="contact_desc"></p></a>
+      <div id="contact-section">
+        <a href="#"><img class="contact-icon" src="static/img/icon/compass.png">
+        <p class="contact-title">کانال پیام رسان سروش</p>
+        <p class="contact-description"></p></a>
       </div>
-      <div id="contact-template">
-        <a href="#"><img class="contact_icon" src="static/img/icon/compass.png">
-        <p class="contact_title">کانال پیام رسان شاد</p>
-        <p class="contact_desc"></p></a>
+      <div id="contact-section">
+        <a href="#"><img class="contact-icon" src="static/img/icon/compass.png">
+        <p class="contact-title">کانال پیام رسان شاد</p>
+        <p class="contact-description"></p></a>
       </div>
     </span>
     <div id="footer"></div>
