@@ -301,7 +301,11 @@ Body {
   }
   .header-text {
     font-size:22px;
-    margin:10px 7px;
+    margin:11px 7px;
+  }
+  .header-text:hover {
+    font-size:28px;
+    margin:0px 7px;
   }
   #about-template {
     flex-direction:column;
