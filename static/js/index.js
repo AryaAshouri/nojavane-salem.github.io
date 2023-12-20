@@ -16,7 +16,7 @@ function go_poster(){
 }
 function go_podcast(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 5030;
+    document.body.scrollTop = 5000;
   }
   else {
     document.body.scrollTop = 3295;
@@ -24,7 +24,7 @@ function go_podcast(){
 }
 function go_video(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 4160;
+    document.body.scrollTop = 4130;
   }
   else {
     document.body.scrollTop = 2490;
@@ -32,7 +32,7 @@ function go_video(){
 }
 function go_contact(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 6400;
+    document.body.scrollTop = 6370;
   }
   else {
     document.body.scrollTop = 4140;
