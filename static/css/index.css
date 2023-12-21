@@ -127,7 +127,7 @@ Body {
   background:var(--main-theme-color);
   border-radius:20px;
   width:400px;
-  height:380px;
+  height:400px;
   margin:100px auto;
   transition:0.4s;
 }
@@ -135,28 +135,70 @@ Body {
   transform:scale(1.05);
 }
 .poster-title {
+  background:var(--another-theme-color);
+  border-radius:20px 20px 0 0;
+  width:340px;
+  height:60px;
+  border:none;
   font-family:Aviny;
-  font-size:40px;
+  font-size:36px;
   color:white;
   text-align:center;
-  margin:20px auto;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  margin:30px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.poster-title:hover {
+  background:var(--another-deep-color);
+}
+.poster-image-container {
+  background:var(--another-theme-color);
+  width:340px;
+  height:200px;
+  border:none;
+  font-family:Aviny;
+  font-size:44px;
+  color:white;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  margin:-20px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.poster-image-container:hover {
+  background:var(--another-deep-color);
 }
 .poster-image {
   width:340px;
   height:200px;
-  border-radius:20px;
-  justify-content:center;
   display:flex;
+  justify-content:center;
   margin:-20px auto;
 }
-.poster-description {
-  font-family:Vazir;
-  font-size:18px;
+.poster-button {
+  background:var(--another-theme-color);
+  border-radius:0 0 20px 20px;
+  width:340px;
+  height:60px;
+  border:none;
+  font-family:Aviny;
+  font-size:22px;
   color:white;
   text-align:center;
-  width:340px;
-  height:70px;
-  margin:20px auto;
+  justify-content:center;
+  padding-top:10px;
+  display:flex;
+  margin:30px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.poster-button:hover {
+  background:var(--another-deep-color);
 }
 #video-template {
   justify-content:center;
@@ -222,7 +264,7 @@ Body {
   height:60px;
   border:none;
   font-family:Aviny;
-  font-size:40px;
+  font-size:36px;
   color:white;
   text-align:center;
   align-items:center;
@@ -268,7 +310,7 @@ Body {
   height:60px;
   border:none;
   font-family:Aviny;
-  font-size:24px;
+  font-size:22px;
   color:white;
   text-align:center;
   justify-content:center;
@@ -370,19 +412,25 @@ Body {
   .poster-section {
     margin-top:-70px;
     width:300px;
-    height:300px;
+    height:340px;
   }
   .poster-title {
-    font-size:36px;
+    width:240px;
+    height:50px;
+    font-size:26px;
   }
-  .poster-image {
+  .poster-image-container {
     width:240px;
     height:160px;
   }
-  .poster-description {
-    font-size:12px;
-    background:none;
-    width:225px;
+  .poster-image {
+    width:280px;
+    height:160px;
+  }
+  .poster-button {
+    width:240px;
+    height:50px;
+    font-size:18px;
   }
   #video-template {
     flex-direction:column;
@@ -419,19 +467,25 @@ Body {
   .podcast-section {
     margin-top:-70px;
     width:300px;
-    height:300px;
+    height:340px;
   }
   .podcast-title {
-    font-size:36px;
+    width:240px;
+    height:50px;
+    font-size:26px;
   }
-  .podcast-image {
+  .podcast-image-container {
     width:240px;
     height:160px;
   }
-  .podcast-description {
-    font-size:12px;
-    background:none;
-    width:225px;
+  .podcast-image {
+    width:280px;
+    height:160px;
+  }
+  .podcast-button {
+    width:240px;
+    height:50px;
+    font-size:18px;
   }
   #contact-template {
     flex-direction:column;
