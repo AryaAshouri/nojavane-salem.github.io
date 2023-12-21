@@ -6,6 +6,7 @@
 :root {
   --main-theme-color:rgb(0, 166, 147);
   --another-theme-color:rgb(0, 173, 154);
+  --another-deep-color:rgb(0, 156, 138);
 }
 *:focus {
   outline:none;
@@ -142,7 +143,7 @@ Body {
 }
 .poster-image {
   width:340px;
-  height:240px;
+  height:200px;
   border-radius:20px;
   justify-content:center;
   display:flex;
@@ -207,7 +208,7 @@ Body {
   background:var(--main-theme-color);
   border-radius:20px;
   width:400px;
-  height:380px;
+  height:400px;
   margin:100px auto;
   transition:0.4s;
 }
@@ -215,28 +216,70 @@ Body {
   transform:scale(1.05);
 }
 .podcast-title {
+  background:var(--another-theme-color);
+  border-radius:20px 20px 0 0;
+  width:340px;
+  height:60px;
+  border:none;
+  font-family:Aviny;
+  font-size:40px;
+  color:white;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  margin:30px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.podcast-title:hover {
+  background:var(--another-deep-color);
+}
+.podcast-image-container {
+  background:var(--another-theme-color);
+  width:340px;
+  height:200px;
+  border:none;
   font-family:Aviny;
   font-size:44px;
   color:white;
   text-align:center;
-  margin:10px auto;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  margin:-20px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.podcast-image-container:hover {
+  background:var(--another-deep-color);
 }
 .podcast-image {
   width:340px;
   height:200px;
-  border-radius:20px;
   display:flex;
   justify-content:center;
-  margin:-10px auto;
+  margin:-20px auto;
 }
-.podcast-description {
-  font-family:Vazir;
-  font-size:18px;
+.podcast-button {
+  background:var(--another-theme-color);
+  border-radius:0 0 20px 20px;
+  width:340px;
+  height:60px;
+  border:none;
+  font-family:Aviny;
+  font-size:24px;
   color:white;
   text-align:center;
-  width:340px;
-  height:70px;
-  margin:20px auto;
+  justify-content:center;
+  padding-top:10px;
+  display:flex;
+  margin:30px auto;
+  transition:0.4s;
+  cursor:pointer
+}
+.podcast-button:hover {
+  background:var(--another-deep-color);
 }
 #contact-template {
   justify-content:center;
@@ -260,6 +303,11 @@ Body {
   justify-content:center;
   display:flex;
   margin:30px auto;
+  cursor:pointer;
+  transition:0.5s;
+}
+.contact-icon:hover {
+  transform:rotate(180deg);
 }
 .contact-title {
   font-family:Aviny;

@@ -8,7 +8,7 @@ function go_about(){
 }
 function go_poster(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 2710;
+    document.body.scrollTop = 2730;
   }
   else {
     document.body.scrollTop = 1660;
@@ -16,7 +16,7 @@ function go_poster(){
 }
 function go_podcast(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 4950;
+    document.body.scrollTop = 4970;
   }
   else {
     document.body.scrollTop = 3295;
@@ -24,7 +24,7 @@ function go_podcast(){
 }
 function go_video(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 4080;
+    document.body.scrollTop = 4090;
   }
   else {
     document.body.scrollTop = 2490;
@@ -40,5 +40,9 @@ function go_contact(){
 }
 function reload_page(){
   location.reload();
+}
+function play_podcast(){
+  var podcast = document.getElementById("podcast-link")
+  podcast.play()
 }
 AOS.init();
