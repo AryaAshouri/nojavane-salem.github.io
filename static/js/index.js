@@ -14,28 +14,28 @@ function go_poster(){
     document.body.scrollTop = 1660;
   }
 }
-function go_podcast(){
-  if (window.innerWidth <= 900){
-    document.body.scrollTop = 5020;
-  }
-  else {
-    document.body.scrollTop = 3295;
-  }
-}
 function go_video(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 4130;
+    document.body.scrollTop = 4230;
   }
   else {
-    document.body.scrollTop = 2490;
+    document.body.scrollTop = 2500;
+  }
+}
+function go_podcast(){
+  if (window.innerWidth <= 900){
+    document.body.scrollTop = 5100;
+  }
+  else {
+    document.body.scrollTop = 3315;
   }
 }
 function go_contact(){
   if (window.innerWidth <= 900){
-    document.body.scrollTop = 6390;
+    document.body.scrollTop = 6590;
   }
   else {
-    document.body.scrollTop = 4140;
+    document.body.scrollTop = 4180;
   }
 }
 function reload_page(){
