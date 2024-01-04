@@ -101,6 +101,7 @@ Body {
   margin:30px auto;
   justify-content:center;
   display:flex;
+  cursor:pointer;
 }
 .about-title {
   font-family:Aviny;
@@ -220,13 +221,14 @@ Body {
   border-radius:20px;
   margin:-110px auto;
   transition:0.4s;
+  cursor:pointer;
 }
 .video-section:hover {
   transform:scale(1.05);
 }
 .video-title {
   font-family:Aviny;
-  font-size:40px;
+  font-size:46px;
   color:white;
   margin:150px auto;
   padding-top:65px;
@@ -234,7 +236,7 @@ Body {
 }
 .video-description {
   font-family:Vazir;
-  font-size:16px;
+  font-size:13px;
   color:white;
   width:300px;
   height:50px;
@@ -360,9 +362,9 @@ Body {
 }
 .contact-description {
   font-family:Vazir;
-  font-size:16px;
+  font-size:14px;
   color:white;
-  width:230px;
+  width:220px;
   height:170px;
   text-align:center;
   margin:20px auto;

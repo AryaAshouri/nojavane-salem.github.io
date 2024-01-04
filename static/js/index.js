@@ -45,4 +45,13 @@ function play_podcast(){
   var podcast = document.getElementById("podcast-link")
   podcast.play()
 }
+function no_likings_yet(){
+  alert("محتوایی برای پسندیدن یافت نشد")
+}
+function no_playables_yet(){
+  alert("محتوایی برای پخش یافت نشد")
+}
+function no_channel_yet(){
+  alert("راه های ارتباطی در دست ساخت هستند")
+}
 AOS.init();

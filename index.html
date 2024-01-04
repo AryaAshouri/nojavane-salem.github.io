@@ -56,37 +56,37 @@
         <div class="poster-image-container">
           <img class="poster-image" src="static/img/poster/blog_raw.png">
         </div>
-        <button class="poster-button" onclick="play_podcast()">پسند محتوا</button>
+        <button class="poster-button" onclick="no_likings_yet()">پسند محتوا</button>
       </div>
       <div class="poster-section">
         <p class="poster-title">نمونه شماره دو</p>
         <div class="poster-image-container">
           <img class="poster-image" src="static/img/poster/blog_raw.png">
         </div>
-        <button class="poster-button" onclick="play_podcast()">پسند محتوا</button>
+        <button class="poster-button" onclick="no_likings_yet()">پسند محتوا</button>
       </div>
       <div class="poster-section">
         <p class="poster-title">نمونه شماره سه</p>
         <div class="poster-image-container">
           <img class="poster-image" src="static/img/poster/blog_raw.png">
         </div>
-        <button class="poster-button" onclick="play_podcast()">پسند محتوا</button>
+        <button class="poster-button" onclick="no_likings_yet()">پسند محتوا</button>
       </div>
     </span>
 
     <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">تماشایی های محبوب</p>
     <span data-aos="fade-up" data-aos-duration="750" id="video-template">
       <div class="video-section">
-        <a href="#"><div class="inner-video-section">
-          <p class="video-title"></p>
-          <p class="video-description"></p>
-        </div></a>
+        <div class="inner-video-section">
+          <p class="video-title">محتوایی یافت نشد</p>
+          <p class="video-description">در حال حاضر محتوایی در این بخش وجود ندارد</p>
+        </div>
       </div>
       <div class="video-section">
-        <a href="#"><div class="inner-video-section">
-          <p class="video-title"></p>
-          <p class="video-description"></p>
-        </div></a>
+        <div class="inner-video-section">
+          <p class="video-title">محتوایی یافت نشد</p>
+          <p class="video-description">در حال حاضر محتوایی در این بخش وجود ندارد</p>
+        </div>
       </div>
     </span>
     <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">شنیدنی های محبوب</p>
@@ -97,7 +97,7 @@
           <img class="podcast-image" src="static/img/poster/blog_raw.png">
         </div>
         <audio id="podcast-link" src=""></audio>
-        <button class="podcast-button" onclick="play_podcast()">بخش پادکست</button>
+        <button class="podcast-button" onclick="no_playables_yet()" onclick="play_podcast()">بخش پادکست</button>
       </div>
       <div class="podcast-section">
         <p class="podcast-title">ایمان و اعتقاد به خدا</p>
@@ -105,7 +105,7 @@
           <img class="podcast-image" src="static/img/poster/blog_raw.png">
         </div>
         <audio id="podcast-link" src=""></audio>
-        <button class="podcast-button" onclick="play_podcast()">بخش پادکست</button>
+        <button class="podcast-button" onclick="no_playables_yet()" onclick="play_podcast()">بخش پادکست</button>
       </div>
       <div class="podcast-section">
         <p class="podcast-title">مسئولیت پذیری و اراده</p>
@@ -113,31 +113,31 @@
           <img class="podcast-image" src="static/img/poster/blog_raw.png">
         </div>
         <audio id="podcast-link" src=""></audio>
-        <button class="podcast-button" onclick="play_podcast()">بخش پادکست</button>
+        <button class="podcast-button" onclick="no_playables_yet()">بخش پادکست</button>
       </div>
     </span>
 
     <p data-aos="fade-up" data-aos-duration="750" style="margin-top:220px;" id="title-text">راه های ارتباطی</p>
     <span data-aos="fade-up" data-aos-duration="750" id="contact-template">
       <div class="contact-section">
-        <a href="#"><img class="contact-icon" src="static/img/icon/compass.png">
+        <img class="contact-icon" src="static/img/icon/compass.png" onclick="no_channel_yet()">
         <p class="contact-title">کانال پیام رسان ایتا</p>
-        <p class="contact-description"></p></a>
+        <p class="contact-description">در این بستر شما می توانید از اخبار جدیدترین محتوای تولید شده توسط گروه فرهنگی اعم از پادکست، ویدیو کست و پوستر مطلع شوید، از منابع موجود به نحو احسن استفاده کنید و بهره کافی و لازم را از این موراد ببرید</p>
       </div>
       <div class="contact-section">
-        <a href="#"><img class="contact-icon" src="static/img/icon/compass.png">
+        <img class="contact-icon" src="static/img/icon/compass.png" onclick="no_channel_yet()">
         <p class="contact-title">کانال پیام رسان بله</p>
-        <p class="contact-description"></p></a>
+        <p class="contact-description">در این بستر شما می توانید از اخبار جدیدترین محتوای تولید شده توسط گروه فرهنگی اعم از پادکست، ویدیو کست و پوستر مطلع شوید، از منابع موجود به نحو احسن استفاده کنید و بهره کافی و لازم را از این موراد ببرید</p>
       </div>
       <div class="contact-section">
-        <a href="#"><img class="contact-icon" src="static/img/icon/compass.png">
+        <img class="contact-icon" src="static/img/icon/compass.png" onclick="no_channel_yet()">
         <p class="contact-title">کانال پیام رسان سروش</p>
-        <p class="contact-description"></p></a>
+        <p class="contact-description">در این بستر شما می توانید از اخبار جدیدترین محتوای تولید شده توسط گروه فرهنگی اعم از پادکست، ویدیو کست و پوستر مطلع شوید، از منابع موجود به نحو احسن استفاده کنید و بهره کافی و لازم را از این موراد ببرید</p>
       </div>
       <div class="contact-section">
-        <a href="#"><img class="contact-icon" src="static/img/icon/compass.png">
-        <p class="contact-title">کانال پیام رسان شاد</p>
-        <p class="contact-description"></p></a>
+        <img class="contact-icon" src="static/img/icon/compass.png" onclick="no_channel_yet()">
+        <p class="contact-title">کانال پیام رسان روبیکا</p>
+        <p class="contact-description">در این بستر شما می توانید از اخبار جدیدترین محتوای تولید شده توسط گروه فرهنگی اعم از پادکست، ویدیو کست و پوستر مطلع شوید، از منابع موجود به نحو احسن استفاده کنید و بهره کافی و لازم را از این موراد ببرید</p>
       </div>
     </span>
     <div class="footer"></div>
